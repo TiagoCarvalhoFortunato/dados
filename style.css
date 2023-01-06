@@ -38,8 +38,11 @@ section div {
     text-align: center;
 }
 
-table {
+#rolagem {
     overflow-x: auto;
+}
+
+table {
     margin: auto;
     border-collapse: collapse;
 }
