@@ -1,0 +1,54 @@
+@charset "UFT-8";
+
+:root {
+    --cor1: #613229;
+    --cor2: #E6B0A5;
+    --cor3: #E0735D;
+    --cor4: #614A46;
+    --cor5: #AD5A49;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+h1 {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--cor1);
+    color: white;
+}
+
+body {
+    background-color: var(--cor2);
+}
+
+section {
+    max-width: 700px;
+    margin: auto;
+    background-color: white;
+}
+
+section div {
+    padding: 10px;
+    text-align: center;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+tbody {
+    text-align: center;
+}
+
+td, th {
+    width: 80px;
+    padding: 5px;
+    border: 1px solid black;
+}
