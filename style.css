@@ -27,6 +27,10 @@ body {
     background-color: var(--cor2);
 }
 
+p {
+    padding-bottom: 10px;
+}
+
 section {
     max-width: 700px;
     margin: auto;
@@ -38,13 +42,24 @@ section div {
     text-align: center;
 }
 
+#vendas caption {
+    border: 1px solid black;
+    color: white;
+    font-weight: bolder;
+    padding: 5px;
+    background-color: var(--cor5);
+    box-shadow: 3px 0px 4px rgba(0, 0, 0, 0.438);
+}
+
 #rolagem {
     overflow-x: auto;
+    
 }
 
 table {
     margin: auto;
     border-collapse: collapse;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.493);
 }
 
 tbody {

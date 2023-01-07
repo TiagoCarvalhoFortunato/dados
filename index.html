@@ -6,17 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/paz.jpg" type="paz-jpg">
     <link rel="stylesheet" href="style.css">
-    <title>Dados Pessoais</title>
+    <title>Tabela de Vendas</title>
 </head>
 <body>
     <header>
-        <h1>Fórmulas !</h1>
+        <h1>Formulário de Lucros !</h1>
     </header>
     <section>
         <div>
-            <label for="camisa">Valor de Venda da Camiseta:</label>
-            <input type="number" name="camisa" id="icamisa">
-            <input type="submit" value="Enviar"  onclick="paratabela()">
+            <p>
+                <label for="icamisa">Valor de Venda da Camiseta:</label>
+                <input type="number" name="camisa" id="icamisa">
+                <input type="submit" value="Enviar"  onclick="camisetatabela()">
+            </p>
+            <p>
+                <label for="ishort">Valor de Venda do Short: </label>
+                <input type="number" name="short" id="ishort">
+                <input type="submit" value="Enviar" onclick="shorttabela()">
+            </p>
+            <p>
+                <label for="imeia">Valor de Venda da Meia: </label>
+                <input type="number" name="meia" id="imeia">
+                <input type="submit" value="Enviar" onclick="meiatabela()">
+            </p>
+            <p>
+                <label for="isapato">Valor de Venda do Sapato: </label>
+                <input type="number" name="sapato" id="isapato">
+                <input type="submit" value="Enviar" onclick="sapatotabela()">
+            </p>
         </div>
         <div id="rolagem">
             <table id="vendas">
@@ -37,23 +54,23 @@
                     <tr>
                         <th>Vendas(R$)</th>
                         <td id="icamiseta"></td>
-                        <td>69.99</td>
-                        <td>2.99</td>
-                        <td>99.99</td>
+                        <td id="ishorts"></td>
+                        <td id="imeias"></td>
+                        <td id="isapatos"></td>
                     </tr>
                     <tr>
                         <th>Custo(R$)</th>
-                        <td>29.90</td>
-                        <td>39.99</td>
-                        <td>1.99</td>
-                        <td>59.99</td>
+                        <td>29,90</td>
+                        <td>39,99</td>
+                        <td>1,99</td>
+                        <td>59,99</td>
                     </tr>
                     <tr>
                         <th>Lucro(R$)</th>
                         <td id="rescamiseta"></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td id="resshort"></td>
+                        <td id="resmeia"></td>
+                        <td id="ressapato"></td>
                     </tr>
                     
                 </tbody>
