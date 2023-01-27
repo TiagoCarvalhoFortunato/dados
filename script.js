@@ -38,9 +38,17 @@ let esapato = document.getElementById('isapato')
 let esapatos = document.getElementById('isapatos')
 let ressapato = document.getElementById('ressapato')
 
+let res = document.getElementById('res')
+
 function sapatotabela() {
     let rsapato = Number(esapato.value)
     lucrosapato = rsapato - 59.99
     esapatos.innerHTML = rsapato.toFixed(2).replace('.', ',')
     ressapato.innerHTML = lucrosapato.toFixed(2).replace('.', ',')
+
+    /*Eu estou fazendo dessa maneira ai que esta em comentario
+    mas vejo uma galera fazendo do outro jeito abaixo, porém aqui não vai kkk*/
+
+    //res.innerHTML = 'Você terá um lucro de R$ ' + lucrosapato + '!'
+    res.innerHTML = `Você terá um lucro de R$ ${lucrosapato}  !`
 }
